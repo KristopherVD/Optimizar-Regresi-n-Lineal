@@ -47,7 +47,7 @@ class RegresionOptimizador:
         return beta_optimo, self.sse(beta_optimo)
 
     def graficar_entregables(self):
-        """Genera las gráficas solicitadas en la rúbrica"""
+        """Generar las gráficas"""
         fig, axs = plt.subplots(1, 2, figsize=(15, 6))
         
         # --- Gráfica 1: Comparativa de Pendientes ---
@@ -100,7 +100,7 @@ class RegresionOptimizador:
 # Ejecución del Reto
 # ==========================================
 if __name__ == "__main__":
-    # Dataset proporcionado en Moodle
+    # Dataset proporcionado
     x = [30, 35, 45, 50, 60, 70, 80, 90, 100, 120]
     y = [8.5, 10.2, 13.0, 14.5, 18.2, 20.1, 23.5, 26.2, 30.5, 35.0]
     
@@ -117,6 +117,6 @@ if __name__ == "__main__":
     print(f"Beta 0 (Intersección):     {beta_0_opt:.5f}")
     print(f"SSE Mínimo alcanzado:      {sse_minimo:.5f}")
     print("----------------------------------")
-    print("Generando gráficas obligatorias...")
+    print("Generando gráficas...")
     
     modelo.graficar_entregables()
